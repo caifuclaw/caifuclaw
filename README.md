@@ -1,13 +1,13 @@
- CaiFuClaw 智能体
+ CaiFuClaw ERP 智能体
 
 > 跨境电商运营智能体，让多店铺订单管理更高效。
 
-CaiFuClaw 智能体是一款面向跨境电商卖家的本地化运营自动化工具，专注于多店铺订单统一管理、自动化处理、自动打印面单、库存预警、物流对接与数据分析，帮助卖家减少重复人工操作，提升订单处理效率与运营稳定性。
+CaiFuClaw ERP 智能体是一款面向跨境电商卖家的本地化运营自动化工具，专注于多店铺订单统一管理、自动化处理、自动打印面单、库存预警、物流对接与数据分析，帮助卖家减少重复人工操作，提升订单处理效率与运营稳定性。
 
 ## 项目简介
 
 在跨境电商日常运营中，卖家往往需要同时管理多个平台、多个店铺和大量订单。  
-CaiFuClaw 智能体通过自动化流程和本地部署能力，将订单导入、智能处理、面单打印、发货管理等环节串联起来，形成高效、稳定、可控的运营系统。
+CaiFuClaw ERP 智能体通过自动化流程和本地部署能力，将订单导入、智能处理、面单打印、发货管理等环节串联起来，形成高效、稳定、可控的运营系统。
 
 适用平台包括：
 
@@ -122,11 +122,11 @@ CaiFuClaw 智能体通过自动化流程和本地部署能力，将订单导入�
 - 提升团队管理安全性
 - 避免误操作与越权访问
 
-# CaiFuClaw Agent
+# CaiFuClaw ERP Agent
 
 > An intelligent cross-border e-commerce operations agent that makes multi-store order management more efficient.
 
-CaiFuClaw Agent is a localized operations automation tool designed for cross-border e-commerce sellers. It focuses on unified multi-store order management, automated order processing, automatic shipping label printing, inventory alerts, logistics integration, and data analytics, helping sellers reduce repetitive manual work while improving order processing efficiency and operational stability.
+CaiFuClaw ERP Agent is a localized operations automation tool designed for cross-border e-commerce sellers. It focuses on unified multi-store order management, automated order processing, automatic shipping label printing, inventory alerts, logistics integration, and data analytics, helping sellers reduce repetitive manual work while improving order processing efficiency and operational stability.
 
 ## Project Overview
 
