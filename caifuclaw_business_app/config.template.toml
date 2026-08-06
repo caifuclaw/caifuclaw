@@ -1,0 +1,168 @@
+[postgres]
+host = "localhost"
+port = 5432
+user = "postgres"
+password = "change-me"
+maintenance_database = "postgres"
+
+[databases]
+sync = "caifuclaw_ai_sync"
+
+[services]
+connector_runtime_url = "http://127.0.0.1:8100"
+public_base_url = "http://127.0.0.1:9999"
+
+[platform_endpoints]
+ozon = "https://api-seller.ozon.ru"
+allegro = "https://api.allegro.pl"
+joom_logistics = "https://api-merchant.joom.com/api/v3"
+mercadolibre = "https://api.mercadolibre.com"
+wildberries = "https://marketplace-api.wildberries.ru"
+amazon = "https://sellingpartnerapi-na.amazon.com"
+shopee = "https://partner.shopeemobile.com"
+tiktok_shop = "https://open-api.tiktokglobalshop.com"
+aliexpress = "https://api-sg.aliexpress.com/sync"
+lazada = "https://api.lazada.com/rest"
+shopify = "https://{shop_domain}"
+ebay = "https://api.ebay.com"
+walmart = "https://marketplace.walmartapis.com"
+temu = "https://openapi-b-us.temu.com"
+shein = "https://openapi.sheincorp.com"
+coupang = "https://api-gateway.coupang.com"
+wayfair = "https://api.wayfair.com/v1/graphql"
+dmsmatrix = "https://api.dmsmatrix.net/apis"
+
+[oauth]
+authorization_session_minutes = 30
+
+[oauth.joom_logistics]
+client_id = ""
+client_secret = ""
+redirect_uri = "http://127.0.0.1:9999/api/joom/callback"
+authorize_url = "https://api-merchant.joom.com/api/v2/oauth/authorize"
+token_url = "https://api-merchant.joom.com/api/v2/oauth/access_token"
+refresh_url = "https://api-merchant.joom.com/api/v2/oauth/refresh_token"
+
+[oauth.allegro]
+client_id = ""
+client_secret = ""
+redirect_uri = "http://127.0.0.1:9999/api/allegro/callback"
+authorize_url = "https://allegro.pl/auth/oauth/authorize"
+token_url = "https://allegro.pl/auth/oauth/token"
+refresh_url = "https://allegro.pl/auth/oauth/token"
+
+[oauth.mercadolibre]
+client_id = ""
+client_secret = ""
+redirect_uri = "http://127.0.0.1:9999/api/mercadolibre/callback"
+authorize_url = "https://auth.mercadolibre.com.ar/authorization"
+global_authorize_url = "https://global-selling.mercadolibre.com/authorization"
+token_url = "https://api.mercadolibre.com/oauth/token"
+refresh_url = "https://api.mercadolibre.com/oauth/token"
+
+[exchange_rates]
+enabled = false
+base_fetch_currency = "USD"
+
+[exchange_rates.tencent_cloud_market]
+endpoint = "https://ap-shanghai.cloudmarket-apigw.com/service-p90qcght/exchange/single"
+secret_id = ""
+secret_key = ""
+
+[security]
+sync_secret_key = "REPLACE_WITH_AT_LEAST_32_RANDOM_CHARACTERS"
+fernet_key = ""
+internal_service_token = "REPLACE_WITH_AT_LEAST_32_RANDOM_CHARACTERS"
+allowed_origins = ["http://127.0.0.1:9999", "http://localhost:9999", "http://127.0.0.1:5173", "http://localhost:5173"]
+
+[storage]
+label_storage_root = "data/labels"
+
+[oss]
+access_key_id = ""
+access_key_secret = ""
+bucket_name = ""
+endpoint = ""
+# Optional custom public host, for example "media.example.invalid".
+public_domain = ""
+public_base_url = ""
+
+[translation.baidu]
+# Optional. Used to translate marketplace category names to English during category sync.
+# The API signs requests with MD5(appid + q + salt + secret_key).
+appid = ""
+secret_key = ""
+endpoint = "https://fanyi-api.baidu.com/api/trans/vip/translate"
+
+[listing]
+storage_root = "data/listing"
+template_root = "./demo_data/webTemplates"
+# Force listing uploads to start with zero stock on Allegro, MercadoLibre, and Joom.
+# Ozon and Wildberries product uploads are intentionally excluded.
+force_zero_stock_on_upload = true
+recalculate_engine = "auto"
+# Windows uses WPS/Excel COM. macOS/Linux uses LibreOffice/soffice.
+# Set recalculate_command to override the platform default, e.g. a custom script
+# that recalculates and saves "{file}".
+libreoffice_command = ""
+recalculate_command = ""
+recalculate_timeout_seconds = 300
+
+[order_follow_up_export]
+enabled = false
+data_root = "./demo_data"
+workbook_name = "Order follow up 2026_caifuclaw.xlsx"
+template_workbook_name = "Order follow up 2026.xlsx"
+sync_dir = "result_data_sync"
+backup_dir = "result_data_backup"
+purchase_plan_dir = "pur_plan"
+# Set this to the latest scheduled_task_runs.id before enabling the feature.
+cutover_run_id = 0
+max_attempts = 3
+retry_delay_seconds = 300
+worker_poll_seconds = 5
+worker_idle_seconds = 15
+lease_seconds = 1800
+backup_retention_days = 90
+# Avoid re-exporting orders already present in the inherited workbook baseline.
+dedupe_existing_workbook = true
+# Used only when the current order has no logistics rule match.
+logistics_channel_fallbacks = { ozon = "ozon线上发货", joom = "Joom Logistics", joom_logistics = "Joom Logistics", mercadolibre = "Mercadolibre跨境发货" }
+recalculate_engine = "auto"
+recalculate_command = ""
+recalculate_timeout_seconds = 300
+
+[sync_admin]
+username = "admin"
+password = "REPLACE_WITH_AT_LEAST_12_RANDOM_CHARACTERS"
+
+[scheduler]
+# 订单同步最小间隔，单位：秒。每个店铺自己的 sync_interval_seconds 不能低于这个值。
+order_sync_min_interval_seconds = 1200
+# 服务启动时，多个店铺同步任务之间的错峰延迟，单位：秒，避免同时请求平台接口。
+order_sync_startup_stagger_seconds = 15
+# 是否在本进程启用平台同步调度器。多进程部署时只允许 leader 进程实际运行调度。
+scheduler_enabled = true
+# 是否使用 PostgreSQL advisory lock 选举唯一调度 leader。
+scheduler_leader_lock_enabled = true
+# 调度 leader 心跳间隔，单位：秒。
+scheduler_heartbeat_interval_seconds = 60
+# 同步 watchdog 扫描间隔，单位：秒。
+scheduler_watchdog_interval_seconds = 60
+# 判断店铺同步超时的宽限时间，单位：秒。
+sync_overdue_grace_seconds = 300
+# running 同步日志超过该时间未结束时标记为 stale failed，单位：秒。
+sync_running_timeout_seconds = 1800
+# 补偿同步回溯重叠窗口，单位：秒。
+sync_catchup_overlap_seconds = 3600
+# 单次补偿同步最大窗口，单位：秒。
+sync_catchup_max_window_seconds = 259200
+# 平台订单状态刷新间隔，单位：秒。
+status_sync_interval_seconds = 600
+# OAuth 授权令牌维护间隔，单位：秒，用于自动刷新快过期的 token。
+oauth_token_maintenance_interval_seconds = 1800
+# 定时任务失败重试扫描间隔，单位：秒。
+scheduled_task_retry_scan_interval_seconds = 60
+# 汇率同步时间，使用 5 段 cron 表达式，时区为 Asia/Shanghai。
+# 示例含义：每天 02:30、02:45、03:00、03:15、03:30 各同步一次。
+exchange_rate_sync_cron_exprs = ["30,45 2 * * *", "0,15,30 3 * * *"]

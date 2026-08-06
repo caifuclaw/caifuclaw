@@ -1,0 +1,415 @@
+.orders-page {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.orders-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.orders-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.orders-title-wrap {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
+}
+
+.orders-risk-total {
+  color: #64748b;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.orders-risk-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.orders-risk-alert {
+  flex: 1;
+  min-width: 280px;
+}
+
+.orders-risk-handler {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.orders-status-tabs {
+  margin-bottom: 10px;
+}
+
+.orders-status-tabs > .ant-tabs-nav {
+  margin: 0;
+}
+
+.orders-status-tabs > .ant-tabs-nav::before {
+  border-bottom: 0;
+}
+
+.orders-status-tabs .ant-tabs-nav-list {
+  display: flex;
+  gap: 8px;
+}
+
+.orders-status-tabs .ant-tabs-tab {
+  min-height: 34px;
+  margin: 0 !important;
+  padding: 0;
+  color: #374151;
+  background: #fff;
+  border: 1px solid #d9e0ea;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    color 0.16s ease,
+    background-color 0.16s ease,
+    border-color 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.orders-status-tabs .ant-tabs-tab:hover {
+  color: #1677ff;
+  background: #f0f7ff;
+  border-color: #91caff;
+}
+
+.orders-status-tabs .ant-tabs-tab:focus-visible {
+  outline: 2px solid #91caff;
+  outline-offset: 2px;
+}
+
+.orders-status-tabs .ant-tabs-tab-btn:focus-visible {
+  outline: 2px solid #91caff;
+  outline-offset: 2px;
+}
+
+.orders-status-tabs .ant-tabs-tab-active {
+  color: #0958d9;
+  background: #e6f4ff;
+  border-color: #1677ff;
+  box-shadow: 0 1px 2px rgba(22, 119, 255, 0.12);
+}
+
+.orders-status-tabs .ant-tabs-tab-btn {
+  color: inherit !important;
+}
+
+.orders-status-tabs .ant-tabs-ink-bar {
+  display: none;
+}
+
+.orders-status-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.orders-status-tab__label {
+  white-space: nowrap;
+}
+
+.orders-status-tab__badge {
+  min-width: 28px;
+  padding: 2px 7px;
+  color: #4b5563;
+  text-align: center;
+  background: #f5f7fa;
+  border: 1px solid #d9e0ea;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.orders-status-tabs .ant-tabs-tab-active .orders-status-tab__badge {
+  color: #0958d9;
+  background: #fff;
+  border-color: #91caff;
+  font-weight: 500;
+}
+
+.orders-filter {
+  row-gap: 12px;
+  margin-bottom: 12px;
+}
+
+.orders-batch-summary {
+  margin-bottom: 12px;
+}
+
+.orders-batch-summary__numbers {
+  display: block;
+  max-height: 64px;
+  overflow: auto;
+  overflow-wrap: anywhere;
+}
+
+.orders-batch-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.orders-batch-modal__count {
+  color: #4b5563;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.orders-remaining-time {
+  font-weight: 600;
+}
+
+.orders-remaining-time--overdue {
+  color: #ff4d4f;
+}
+
+.orders-remaining-time--warning {
+  color: #d48806;
+}
+
+.orders-remaining-time--ok {
+  color: #389e0d;
+}
+
+@media (max-width: 768px) {
+  .orders-risk-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .orders-risk-alert {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+.order-detail-modal {
+  max-width: calc(100vw - 64px);
+}
+
+.order-detail-modal .ant-modal-content {
+  max-height: calc(100vh - 48px);
+}
+
+.order-detail-content,
+.order-detail-content .ant-spin-nested-loading,
+.order-detail-content .ant-spin-container,
+.order-detail-tabs {
+  height: 100%;
+  min-height: 0;
+}
+
+.order-detail-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-detail-tabs > .ant-tabs-nav {
+  flex: 0 0 auto;
+  margin-bottom: 16px;
+}
+
+.order-detail-tabs > .ant-tabs-content-holder {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.order-detail-tabs > .ant-tabs-content-holder > .ant-tabs-content,
+.order-detail-tabs > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane {
+  height: 100%;
+}
+
+.order-detail-tabs > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane {
+  overflow: auto;
+}
+
+.order-detail-tabs .section-title:first-child {
+  margin-top: 0;
+}
+
+.print-modal {
+  display: flex;
+  gap: 16px;
+  min-height: 430px;
+}
+
+.print-modal--side {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.print-modal .channel-section {
+  flex: 0 0 312px;
+  min-width: 0;
+  padding-right: 16px;
+  border-right: 1px solid #f0f0f0;
+}
+
+.print-modal .print-modal__main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.print-modal .orders-section {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+.print-modal .section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.print-modal .channel-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.print-modal .channel-card {
+  display: grid;
+  grid-template-rows: 54px 54px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.print-modal .channel-card.selected {
+  border-color: #70ad47;
+}
+
+.print-modal .channel-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 6px 8px;
+  overflow: hidden;
+  color: #4b4b4b;
+  background: #f7f7f7;
+  border-bottom: 1px solid #d8efe1;
+  line-height: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.print-modal .channel-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.print-modal .channel-segment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  padding: 6px 8px;
+  color: #3f3f3f;
+  cursor: pointer;
+  background: #fff;
+  border: 0;
+  border-right: 1px solid #d9d9d9;
+  font: inherit;
+  line-height: 1.2;
+  transition: background 0.15s, color 0.15s;
+}
+
+.print-modal .channel-segment:last-child {
+  border-right: 0;
+}
+
+.print-modal .channel-segment:hover {
+  background: #f5fbff;
+}
+
+.print-modal .channel-segment span,
+.print-modal .channel-segment strong {
+  display: block;
+}
+
+.print-modal .channel-segment strong {
+  margin-top: 4px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.print-modal .channel-segment.active::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  background: #9ac76e;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  content: '';
+}
+
+.print-modal .channel-segment.active::after {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 15px;
+  height: 8px;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transform: rotate(-45deg);
+  content: '';
+}
+
+.print-modal .channel-segment--has strong {
+  color: #52c41a;
+}
+
+.print-modal .channel-segment--no strong {
+  color: #ff4d4f;
+}
+
+.print-modal .confirm-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.print-modal .summary {
+  color: #4b5563;
+  font-size: 13px;
+}

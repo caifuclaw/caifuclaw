@@ -1,0 +1,17 @@
+CaifuClaw AI
+Copyright 2026 CaifuClaw contributors.
+
+The CaifuClaw name, logos, and product marks are trademarks of their respective
+owners and are not licensed by the Apache License. See TRADEMARKS.md.
+
+The repository includes Noto Sans SC font assets under the SIL Open Font License.
+The applicable license text is at caifuclaw_business_app/app/assets/licenses/NotoSansSC-OFL.txt.
+
+Project artwork and trademark assets are documented in ASSETS.md. CaifuClaw
+word marks and logos remain subject to TRADEMARKS.md and are not licensed under
+the Apache License 2.0.
+
+Third-party dependencies retain their own licenses. Their package metadata and
+the frontend lockfile identify the versions and license declarations used to
+build this project. See THIRD_PARTY_LICENSES.md for the reviewed direct
+dependency summary and reproducible audit commands.

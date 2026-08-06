@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /caifuclaw_business_app/frontend
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: /caifuclaw_business_app
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: /connector_runtime
+    schedule:
+      interval: weekly

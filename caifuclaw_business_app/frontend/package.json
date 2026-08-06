@@ -1,0 +1,47 @@
+{
+  "name": "caifuclaw-ai-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host 0.0.0.0 --port 5173"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@ant-design/pro-components": "^2.8.8",
+    "antd": "^5.22.7",
+    "axios": "^1.19.0",
+    "dayjs": "^1.11.13",
+    "echarts": "^6.1.0",
+    "echarts-for-react": "^3.0.6",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "wouter": "^3.10.0",
+    "zustand": "^5.0.2"
+  },
+  "overrides": {
+    "@babel/core": "^7.29.1",
+    "path-to-regexp": "^8.4.2",
+    "postcss": "^8.5.23"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^5.1.4",
+    "less": "^4.2.1",
+    "typescript": "~5.6.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=20.0"
+  }
+}

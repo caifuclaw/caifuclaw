@@ -1,0 +1,55 @@
+{
+    "generated_at":  "2026-08-06T18:13:58+08:00",
+    "purpose":  "sanitized test environment fixture",
+    "test_login":  {
+                       "username":  "testadmin",
+                       "password":  "TestPass123!"
+                   },
+    "postgres_row_counts":  {
+                                "roles":  5,
+                                "local_users":  1,
+                                "user_roles":  1,
+                                "role_menu_permissions":  56,
+                                "platform_settings":  18,
+                                "dashboard_platform_settings":  7,
+                                "exchange_rate_currency_settings":  4,
+                                "exchange_rates":  4,
+                                "shipping_deadline_settings":  7,
+                                "platform_accounts":  7,
+                                "products":  100,
+                                "product_inventory":  100,
+                                "product_shop_mappings":  152,
+                                "orders":  20,
+                                "order_items":  25,
+                                "order_operation_logs":  39,
+                                "purchase_orders":  1,
+                                "purchase_order_items":  1
+                            },
+    "files":  [
+                  {
+                      "path":  "00_create_caifuclaw_ai_test.sql",
+                      "size_bytes":  124,
+                      "sha256":  "519db90fda5a3957800649655abf0363e139763b723c9b2f86509ca41ca33ea3"
+                  },
+                  {
+                      "path":  "config_templates/caifuclaw_business_app.config.toml.example",
+                      "size_bytes":  6497,
+                      "sha256":  "80b4d0db2652bbc287a9f476ee1876108b194573045e10bbb16814f46b4a6054"
+                  },
+                  {
+                      "path":  "postgres_schema.sql",
+                      "size_bytes":  344570,
+                      "sha256":  "80948223ca3c48d46b69c78f598dd8cda215374f2acd72b314190d51837551af"
+                  },
+                  {
+                      "path":  "postgres_seed.sql",
+                      "size_bytes":  208746,
+                      "sha256":  "7d124021eaba823a28bd264a22e4c6e0efdb24c24f315da08f2bbc2084ad99fc"
+                  },
+                  {
+                      "path":  "README.md",
+                      "size_bytes":  1166,
+                      "sha256":  "34718fb4733c523337b9bfe2e0dd097ec39634d7ab5ee4dbdb7a8985fe884c8e"
+                  }
+              ]
+}

@@ -1,0 +1,48 @@
+.logistics-rules-page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 66px);
+}
+
+.logistics-rules-page .data-table-shell {
+  min-height: 0;
+}
+
+.logistics-rule-condition {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-width: 0;
+}
+
+.logistics-rule-condition__empty {
+  color: #8c8c8c;
+}
+
+.logistics-rule-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 0 16px;
+}
+
+.logistics-rule-form-grid .ant-form-item {
+  min-width: 0;
+}
+
+.logistics-rule-form-full {
+  grid-column: 1 / -1;
+}
+
+.logistics-rule-rematch-note {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+@media (max-width: 900px) {
+  .logistics-rule-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

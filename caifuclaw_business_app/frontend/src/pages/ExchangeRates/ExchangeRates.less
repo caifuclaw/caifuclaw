@@ -1,0 +1,82 @@
+.exchange-rate-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.exchange-rate-toolbar__filters {
+  min-width: 0;
+}
+
+.exchange-rate-toolbar__actions {
+  flex: 0 0 auto;
+}
+
+.exchange-rate-summary {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #667085;
+}
+
+.exchange-rate-code {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.exchange-rate-value {
+  color: #d4380d;
+  font-variant-numeric: tabular-nums;
+}
+
+.exchange-rate-setting-note {
+  margin-bottom: 12px;
+  color: #667085;
+  line-height: 1.6;
+}
+
+.exchange-rate-setting-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.exchange-rate-setting-table {
+  .ant-table {
+    border: 1px solid #eaecf0;
+    border-radius: 8px;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #f8fafc;
+    font-weight: 600;
+  }
+}
+
+.exchange-rate-setting-name-cell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 32px;
+  gap: 8px;
+  align-items: center;
+}
+
+.exchange-rate-setting-name-text {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  color: #344054;
+}
+
+@media (max-width: 960px) {
+  .exchange-rate-toolbar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .exchange-rate-toolbar__actions {
+    justify-self: start;
+  }
+}
