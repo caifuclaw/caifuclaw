@@ -18,7 +18,7 @@ After copying `caifuclaw_business_app/config.template.toml` to `config.toml` and
 .\deploy\database\install_demo_database.cmd
 ```
 
-The bundled fixture creates the configured database, imports the schema and sanitized demo data, and verifies the imported row counts. Use `-Replace` only when deliberately rebuilding an existing database. The test login is `testadmin` / `TestPass123!`.
+The bundled fixture creates the configured database, imports the schema and sanitized demo data, and verifies the imported row counts. Use `-Replace` only when deliberately rebuilding an existing database. The test login is `admin` / `123456`.
 
 ## Back Up
 

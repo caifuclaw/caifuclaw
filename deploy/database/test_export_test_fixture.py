@@ -3,15 +3,24 @@
 
 from __future__ import annotations
 
+import json
+import re
+import tempfile
 import unittest
 from datetime import datetime
+from pathlib import Path
 
 from deploy.database.export_test_fixture import (
     CONFIG_SECRET_VALUE,
     FixtureContext,
+    PASSWORD_CONTEXT,
+    TEST_ADMIN_PASSWORD,
+    TEST_ADMIN_USERNAME,
     normalize_postgres_schema_for_driver,
     sanitize_config_template,
     sanitize_row,
+    write_manifest,
+    write_readme,
 )
 
 
@@ -113,6 +122,40 @@ class ExportTestFixtureTests(unittest.TestCase):
         )
 
         self.assertEqual(normalized, "CREATE TABLE example (id integer);\n")
+
+    def test_exported_fixture_advertises_default_admin_login(self) -> None:
+        self.assertEqual(TEST_ADMIN_USERNAME, "admin")
+        self.assertEqual(TEST_ADMIN_PASSWORD, "123456")
+
+        with tempfile.TemporaryDirectory() as directory:
+            output_dir = Path(directory)
+            write_readme(output_dir)
+            write_manifest(output_dir, {})
+
+            readme = (output_dir / "README.md").read_text(encoding="utf-8")
+            manifest = json.loads((output_dir / "manifest.json").read_text(encoding="utf-8"))
+            self.assertIn("- Username: `admin`", readme)
+            self.assertIn("- Password: `123456`", readme)
+            self.assertEqual(manifest["test_login"], {"username": "admin", "password": "123456"})
+
+    def test_bundled_fixture_uses_default_admin_login(self) -> None:
+        fixture_dir = Path(__file__).with_name("demo_fixture")
+        seed = (fixture_dir / "postgres_seed.sql").read_text(encoding="utf-8")
+        login = re.search(r'local_users.*VALUES \(1, \'([^\']+)\', \'([^\']+)\'', seed)
+
+        self.assertIsNotNone(login)
+        assert login is not None
+        self.assertEqual(login.group(1), TEST_ADMIN_USERNAME)
+        self.assertTrue(PASSWORD_CONTEXT.verify(TEST_ADMIN_PASSWORD, login.group(2)))
+
+        readme = (fixture_dir / "README.md").read_text(encoding="utf-8")
+        manifest = json.loads((fixture_dir / "manifest.json").read_text(encoding="utf-8"))
+        self.assertIn(f"- Username: `{TEST_ADMIN_USERNAME}`", readme)
+        self.assertIn(f"- Password: `{TEST_ADMIN_PASSWORD}`", readme)
+        self.assertEqual(
+            manifest["test_login"],
+            {"username": TEST_ADMIN_USERNAME, "password": TEST_ADMIN_PASSWORD},
+        )
 
 
 if __name__ == "__main__":

@@ -18,6 +18,6 @@ The installer creates the configured database, imports `postgres_schema.sql` and
 
 ## Test Login
 
-- Username: `testadmin`
-- Password: `TestPass123!`
+- Username: `admin`
+- Password: `123456`
 Copy the files in `config_templates/` for the new environment and replace all placeholder secrets, URLs, and database connection values. Keep platform accounts disabled until test credentials are configured.

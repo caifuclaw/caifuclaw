@@ -42,8 +42,8 @@ except ImportError:
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-TEST_ADMIN_USERNAME = "testadmin"
-TEST_ADMIN_PASSWORD = "TestPass123!"
+TEST_ADMIN_USERNAME = "admin"
+TEST_ADMIN_PASSWORD = "123456"
 PASSWORD_CONTEXT = CryptContext(schemes=["bcrypt"], deprecated="auto")
 CONFIG_SECRET_VALUE = "CHANGE_ME"
 

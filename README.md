@@ -100,7 +100,7 @@ Copy-Item caifuclaw_business_app\config.template.toml caifuclaw_business_app\con
 .\deploy\database\install_demo_database.cmd
 ```
 
-演示数据库提供 `testadmin` / `TestPass123!` 登录账号。生产环境必须修改所有默认值。如果需要空数据库，请改用：
+演示数据库提供 `admin` / `123456` 登录账号。生产环境必须修改所有默认值。如果需要空数据库，请改用：
 
 ```powershell
 python scripts\init_databases.py

@@ -2,8 +2,8 @@
     "generated_at":  "2026-08-06T18:13:58+08:00",
     "purpose":  "sanitized test environment fixture",
     "test_login":  {
-                       "username":  "testadmin",
-                       "password":  "TestPass123!"
+                       "username":  "admin",
+                       "password":  "123456"
                    },
     "postgres_row_counts":  {
                                 "roles":  5,
@@ -28,8 +28,8 @@
     "files":  [
                   {
                       "path":  "00_create_caifuclaw_ai_test.sql",
-                      "size_bytes":  124,
-                      "sha256":  "519db90fda5a3957800649655abf0363e139763b723c9b2f86509ca41ca33ea3"
+                      "size_bytes":  201,
+                      "sha256":  "50fd8f721ffb88170146860b7cf5a0009a98d846167e2eb05267230f872f6bc9"
                   },
                   {
                       "path":  "config_templates/caifuclaw_business_app.config.toml.example",
@@ -43,13 +43,13 @@
                   },
                   {
                       "path":  "postgres_seed.sql",
-                      "size_bytes":  208746,
-                      "sha256":  "7d124021eaba823a28bd264a22e4c6e0efdb24c24f315da08f2bbc2084ad99fc"
+                      "size_bytes":  208150,
+                      "sha256":  "753bcf5fcb8ca97f77133782248f2a684bb5922b82492593e30c53b0c6a62f65"
                   },
                   {
                       "path":  "README.md",
-                      "size_bytes":  1166,
-                      "sha256":  "34718fb4733c523337b9bfe2e0dd097ec39634d7ab5ee4dbdb7a8985fe884c8e"
+                      "size_bytes":  1154,
+                      "sha256":  "eaa5cb229cac4a482e487d07b95dc966eaa81fd64635e6f8cf54cf75ee4f5e79"
                   }
               ]
 }
