@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 from types import SimpleNamespace
 
 from scripts.update_allegro_internal_order_no_from_excel import (

@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import { useEffect, useMemo, useState } from 'react'
 import { ConfigProvider, App as AntApp, theme } from 'antd'
 import zhCN from 'antd/locale/zh_CN'

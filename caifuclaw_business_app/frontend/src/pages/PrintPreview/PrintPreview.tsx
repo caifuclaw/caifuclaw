@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from '@/router/navigation'
 import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf.mjs'

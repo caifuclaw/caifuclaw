@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Keep a small anonymized platform catalog sample in the configured database.
 
 The command is intentionally dry-run by default.  Use ``--apply`` only when

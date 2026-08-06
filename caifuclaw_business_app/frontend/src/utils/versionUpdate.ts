@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 const VERSION_CHECK_INTERVAL_MS = 60_000
 const PENDING_RELOAD_RETRY_MS = 30_000
 const VERSION_URL = '/version.json'

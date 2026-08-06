@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Trigger the existing logistics sync for local pending Ozon orders."""
 from __future__ import annotations
 

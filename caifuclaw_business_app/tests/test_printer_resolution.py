@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 from app import task_runner
 from app.printer_identity import PrinterIdentity, printer_fingerprint
 

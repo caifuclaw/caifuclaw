@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 import app.main as main_module
 from app.credential_manager import CredentialManager, init_credential_manager
 from app.models import LogisticsAuthorization

@@ -1,4 +1,9 @@
 /**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
+/**
  * Inline scan feedback sounds.
  * Keeps audio out of URL requests so download managers cannot intercept playback.
  */

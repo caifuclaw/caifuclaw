@@ -1,4 +1,7 @@
-﻿import base64
+﻿# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
+import base64
 import hashlib
 import json
 

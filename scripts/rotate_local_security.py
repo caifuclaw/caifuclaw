@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Rotate local demo security values without printing secrets.
 
 This utility is intentionally for a developer workstation. It preserves

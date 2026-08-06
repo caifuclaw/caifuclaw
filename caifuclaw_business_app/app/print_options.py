@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 PRINT_ORIENTATION_AUTO = "auto"
 PRINT_ORIENTATION_PORTRAIT = "portrait"
 PRINT_ORIENTATION_LANDSCAPE = "landscape"

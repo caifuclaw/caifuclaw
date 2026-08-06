@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 ALLEGRO_LABEL_UNAVAILABLE_MESSAGE = (
     "Allegro 当前订单没有可用于下载面单的 shipmentId；"
     "只有运单号时无法从 Allegro 下载面单 PDF。"

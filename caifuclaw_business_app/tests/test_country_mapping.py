@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 from app.country_mapping import COUNTRY_NAME_CN_BY_CODE, country_name_cn, country_name_to_code
 
 

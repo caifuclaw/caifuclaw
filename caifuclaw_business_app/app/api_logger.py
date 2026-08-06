@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """平台 API 请求日志工具。
 
 在 connectors 内部的 HTTP 调用发生后同步写入 api_request_logs 表，

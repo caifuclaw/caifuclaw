@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import { readdirSync, readFileSync } from 'node:fs'
 import { extname, join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'

@@ -1,4 +1,7 @@
-﻿"""重建订单相关表（orders/shipments/label_files/sync_cursors）并创建 api_request_logs；
+﻿# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
+"""重建订单相关表（orders/shipments/label_files/sync_cursors）并创建 api_request_logs；
 同时对所有表和列应用中文 COMMENT（Postgres 通过 SQLAlchemy comment= 自动生成 COMMENT ON 语句）。
 
 保留的表（不删）：local_users、platform_accounts、sync_settings、sync_job_logs。

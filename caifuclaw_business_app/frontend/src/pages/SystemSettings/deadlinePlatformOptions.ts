@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import type { PlatformSettingDto } from '@/api/system'
 import { platformSettingsToOptions, type EnabledPlatformOption } from '@/hooks/useEnabledPlatformOptions'
 import { formatPlatformLabel } from '@/stores/dict'

@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 export const DEFAULT_TABLE_COLUMN_MAX_WIDTH = 450
 export const DEFAULT_TABLE_COLUMN_MIN_WIDTH = 72
 export const DEFAULT_TABLE_CELL_EXTRA_WIDTH = 32

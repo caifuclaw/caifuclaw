@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import { create } from 'zustand'
 import { flattenMenus } from '@/menus'
 import { fetchCurrentUser } from '@/api/auth'

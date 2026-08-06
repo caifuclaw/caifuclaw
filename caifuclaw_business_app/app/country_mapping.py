@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Country code and Chinese name helpers.
 
 The mapping follows ISO 3166-1 alpha-2 codes and includes countries plus

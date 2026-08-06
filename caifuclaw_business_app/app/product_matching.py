@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 from sqlalchemy import func, or_, select
 from sqlalchemy.orm import aliased
 

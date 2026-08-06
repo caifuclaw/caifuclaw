@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 import asyncio
 import base64
 from dataclasses import asdict, is_dataclass

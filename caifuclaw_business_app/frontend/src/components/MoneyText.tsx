@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import { formatMoney } from '@/utils/format'
 
 export function MoneyText({ amount, currency }: { amount?: number | string | null; currency?: string }) {

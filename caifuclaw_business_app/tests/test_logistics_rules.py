@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 from app.logistics_rules import (
     LOGISTICS_MATCH_STATUS_MANUAL,
     apply_logistics_rules,

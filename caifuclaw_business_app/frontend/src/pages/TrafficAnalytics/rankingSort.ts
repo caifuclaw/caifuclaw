@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import type { TrafficRateMetricKey, TrafficSortOrder } from '@/api/trafficAnalytics'
 
 export interface TrafficRankingRateSort {

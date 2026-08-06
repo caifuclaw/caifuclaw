@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Insert historical 2025 orders and the verified 2026 Joom gap order.
 
 This is intentionally independent from the regular order importer and sync

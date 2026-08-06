@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 /** 浏览器下载二进制 / Blob URL 的辅助函数 */
 
 type SavePickerResult =

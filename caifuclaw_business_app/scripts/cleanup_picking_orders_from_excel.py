@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Correct picking-order business statuses from a color-coded Excel export.
 
 The script is dry-run by default. Use ``--apply`` only after reviewing the

@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Fallback Ozon tracking sync for postings stuck in awaiting_registration.
 
 This script intentionally lives outside the main sync engine. It only applies

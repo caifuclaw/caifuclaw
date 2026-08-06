@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 export const TRAFFIC_TABLE_MIN_BODY_HEIGHT = 160
 
 export function fitTableBodyHeightToRows(

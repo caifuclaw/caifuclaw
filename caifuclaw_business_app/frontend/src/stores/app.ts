@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { SizeType } from 'antd/es/config-provider/SizeContext'

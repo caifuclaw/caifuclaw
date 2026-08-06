@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 export const PLATFORM_OPTIONS = [
   { code: 'ozon', label: 'Ozon' },
   { code: 'mercadolibre', label: 'MercadoLibre' },

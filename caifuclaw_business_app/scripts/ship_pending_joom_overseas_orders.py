@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Deprecated Joom warehouse shipping command.
 
 FBJ orders are now exported to Excel and must not be marked shipped locally.

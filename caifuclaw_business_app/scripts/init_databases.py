@@ -1,4 +1,7 @@
-﻿import psycopg
+﻿# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
+import psycopg
 
 from app.database import Base, engine
 import app.models  # noqa: F401

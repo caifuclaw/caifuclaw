@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import { useEffect, useMemo, useState } from 'react'
 import { CloseOutlined, CopyOutlined, DeleteOutlined, EditOutlined, PlusOutlined, SaveOutlined } from '@ant-design/icons'
 import { App, Button, Checkbox, Empty, Form, Input, Space } from 'antd'

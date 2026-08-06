@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Import 2025 H1 historical orders from the per-shop workbook tabs.
 
 This script is deliberately independent from the regular synchronizer and the

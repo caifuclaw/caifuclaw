@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import dayjs from 'dayjs'
 import { describe, expect, it } from 'vitest'
 import type { DashboardRange } from './dashboardPeriod'

@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Platform listing catalog storage, pricing calculation, and synchronization.
 
 The catalog is deliberately separate from the internal product master.  One

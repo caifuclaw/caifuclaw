@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Any

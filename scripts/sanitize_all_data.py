@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Create a runnable demo database without retaining source business data.
 
 The command is dry-run by default. Use ``--apply`` only after the configured

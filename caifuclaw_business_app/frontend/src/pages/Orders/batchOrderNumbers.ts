@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 export const MAX_BATCH_ORDER_NUMBERS = 100
 export const MAX_BATCH_ORDER_NUMBER_LENGTH = 160
 

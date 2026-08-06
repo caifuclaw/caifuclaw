@@ -1,3 +1,8 @@
+/**
+ * Company: 深圳智柠网络科技有限公司
+ * Author: mohsen liang
+ */
+
 import { lazy, Suspense, type ReactNode } from 'react'
 import { Redirect, Route, Switch } from 'wouter'
 import { Spin } from 'antd'

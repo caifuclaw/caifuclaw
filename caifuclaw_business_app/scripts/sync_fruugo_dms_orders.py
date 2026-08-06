@@ -1,3 +1,6 @@
+# Company: 深圳智柠网络科技有限公司
+# Author: mohsen liang
+
 """Trigger Fruugo-DMS order sync through the normal order pipeline."""
 from __future__ import annotations
 
