@@ -15,7 +15,7 @@
     "@ant-design/pro-components": "^2.8.8",
     "antd": "^5.22.7",
     "axios": "^1.19.0",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.21",
     "echarts": "^6.1.0",
     "echarts-for-react": "^3.0.6",
     "pdfjs-dist": "^4.10.38",
